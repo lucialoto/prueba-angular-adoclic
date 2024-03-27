@@ -1,0 +1,20 @@
+<div class="row justify-content-center mt-5">
+  <h3 class="text-center mx-5">Login Form</h3>
+  <p class="text-center mx-5">Angular Demo</p>
+  <div class="card text-center" style="width: 400px; height: 450px;">
+    <div class="card-body">
+      <img class="mt-5 mb-3" src="/assets/img/logo.jpg" alt="">
+      <form>
+          <div class="form-group mb-3">
+              <input type="email" class="form-control" [(ngModel)]="loginObj.EmailId" name="EmailId" placeholder="Email" required>
+          </div>
+          <div class="form-group mb-3">
+              <input type="password" class="form-control" [(ngModel)]="loginObj.Password" name="Password" placeholder="Password" required>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-success" (click)="onLogin()">Login</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
